@@ -24,10 +24,10 @@ const User = sequelize.define("User", {
     allowNull: false,
   },
 
-  // address: {
-  //   type: DataTypes.STRING,
-  //   allowNull: false,
-  // },
+  address: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 });
 
 module.exports = User;
