@@ -31,6 +31,9 @@ sequelize
     console.error("Unable to connect to PostgreSQL:", error);
   });
 
+  app.use("/api/v1/test", require("./routes/authroutes"));
+
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
